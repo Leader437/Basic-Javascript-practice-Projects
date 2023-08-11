@@ -1,0 +1,73 @@
+*, 
+*::before, 
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url('project-4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding: 2rem 3rem;
+    max-width: fit-content;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.time {
+    font-size: 4rem;
+}
+
+.buttons {
+    margin-top: 1rem;
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+}
+
+#start, 
+#reset {
+    font-size: 3rem;
+    color: white;
+    background-color: green;
+    border: none;
+    padding: 0.3rem;
+    cursor: pointer;
+    border-radius: 0.1em;
+    max-height: fit-content;
+    width: 3.5rem;
+    height: 3.5rem;
+    display: grid;
+    place-items: center;
+    transition: box-shadow 0.3s;
+}
+
+#start.started {
+    background-color: orange;
+}
+
+#reset {
+    font-size: 2.5rem;
+    background-color: red;
+}
+
+#start:hover, 
+#reset:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
